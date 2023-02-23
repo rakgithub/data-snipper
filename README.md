@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# UNIT TESt CASE PLAN:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Article List:
 
-## Available Scripts
+1. Verify that the articles are present after we pass the data to the component based on data-testid.
+2. Verify that the articles after loading are diplayed based on the popularity.
+3. If there's no data we should not be exepecting any articles this we can check based on data-testid which we have provided to each Article.
 
-In the project directory, you can run:
+# Article Data hook:
 
-### `npm start`
+1.Verify that the hook fetches data from the provided CSV file path.
+2.Verify that the hook parses the fetched CSV data correctly.
+3. Verify that the hook sets the parsed data to the articles state variable.
+4. Verify that the hook handles errors correctly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# News Timeline:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Verify that the component renders correctly with the provided data.
+2. Verify that the component displays the correct header title.
+3. Verify that the component displays a maximum of 10 articles at a time.
+4. Verify that "More Just in" link is displayed if there are more than 10 articles.
+5. Verify that the component memoizes the articles list using useMemo.
+6. Test that clicking on the "More Just in" link triggers the appropriate action.
 
-### `npm test`
+# Article Timeline:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Verify that the component renders correctly with the provided data.
+2. Verify that the component displays the correct article timestamp and title.
+3. Verify that the component memoizes the rendered list of articles using memo.
